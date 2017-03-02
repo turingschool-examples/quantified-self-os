@@ -1,0 +1,51 @@
+body {
+  font-family: arial;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color:lightgrey;
+  font-weight: bold;
+}
+
+td, th {
+  border:solid black 1px;
+  margin:0;
+  padding:4px;
+}
+
+button {
+  background-color: #56CCF2;
+  border-radius: 2em;
+  text-align:center;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  height: 2em;
+}
+
+label {
+  width: 100%;
+  margin-bottom:20px;
+  display:block;
+  text-align:left;
+  font-weight:bold;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 2em;
+}
+
+.validation-error {
+  color:red;
+  text-align:right;
+  font-weight:normal;
+  margin-top:6px;
+}

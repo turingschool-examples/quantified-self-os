@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+  <script src="./lib/foods.js"></script>
+  <script src="./lib/common.js"></script>
+  <link type="text/css" rel="stylesheet" href="./lib/foods.css" >
+  <link type="text/css" rel="stylesheet" href="./lib/common.css" >
+</head>
+<body>
+  <div id="container">
+    <h1>Manage Foods</h1>
+    <div id="create-form">
+      <label id="name-field">Name
+        <input>
+        <div class="validation-error"></div>
+      </label>
+      <label id="calories-field">Calories
+        <input>
+        <div class="validation-error"></div>
+      </label>
+      <button id="add-food">Add Food</button>
+    </div>
+    <div id="food-filter">
+      <label>Filter by Name
+        <input>
+      </label>
+    </div>
+    <table id="food-list">
+      <thead>
+        <tr><th>Name</th><th>Calories</th></tr>
+      </thead>
+      <tbody>
+        <!-- SAMPLE ROW INSPIRATION FOR YOUR DOM MANIPULATION
+        <tr class="food-row">
+          <td class="food-name">Banana</td>
+          <td class="food-calories">35</td>
+          <td class="food-delete"><button>-</button></td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+</body>
