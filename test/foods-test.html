@@ -18,34 +18,11 @@
   <script src="../lib/foods.js"></script>
   <script src="../lib/common.js"></script>
   <script src="foods-test.js"></script>
-  <style>#container{ display:none; }</style>
+  <style>
+    /*iframe{ height:1px; width:1px; }*/
+  </style>
 </head>
 <body>
   <div id="mocha"></div>
-
-  <div id="container">
-    <h1>Manage Foods</h1>
-    <div id="create-form">
-      <label id="name-field">Name
-        <input>
-        <div class="validation-error">Please Enter a Name</div>
-      </label>
-      <label id="calories-field">Calories
-        <input>
-        <div class="validation-error">Please Enter Calories</div>
-      </label>
-      <button id="add-food">Add Food</button>
-    </div>
-    <div id="food-filter">
-      <label>Filter by Name
-        <input>
-      </label>
-    </div>
-    <table id="food-list">
-      <thead>
-        <tr><th>Name</th><th>Calories</th></tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
+  <iframe id="foods-frame" src="../foods.html"></iframe>
 </body>
