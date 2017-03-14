@@ -6,11 +6,16 @@
   <script>
     mocha.setup('bdd');
     window.assert = chai.assert;
-    window.onload = function() {
-      window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
-    };
+    window.onload = function() { mocha.run(); };
   </script>
   <script src="foods-test.js"></script>
+  <style>
+    iframe {
+      height:1px;
+      width:1px;
+      border:0;
+    }
+  </style>
 </head>
 <body>
   <div id="mocha"></div>

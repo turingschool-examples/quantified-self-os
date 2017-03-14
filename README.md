@@ -8,16 +8,30 @@ Just clone it down, and start editing HTML/JS/CSS.
 
 ## Running Tests
 
-This project uses [Mocha](https://mochajs.org/) as the test runner, [PhantomJS] as the browser, [Chai](http://chaijs.com/) for assertions, and [jQuery](https://jquery.com/) for integration test like functionality.
+This project uses [Mocha](https://mochajs.org/) as the test runner, [Chai](http://chaijs.com/) for assertions, and [jQuery](https://jquery.com/) for integration test like functionality.
 
-To install phantom, run the following:
+We'll need `node` and `npm` installed. Run this if you don't already have `node`:
 
 ```
-$ brew install phantomjs
 $ brew install node
-$ npm install mocha mocha-phantomjs
 ```
 
-To run your tests, run the following from your terminal
+To install mocha, run the following:
 
-`$ mocha-phantomjs test/*-test.html`
+```
+$ npm install -g mocha
+```
+
+Tests must be run in a development server. We'll use a simple static file server called `asdf`
+
+```
+$ npm install -g asdf
+```
+
+And then run `asdf` from the root folder of your project
+
+```
+$ asdf
+```
+
+Now you have a dev server running at [http://localhost:5000](http://localhost:5000). Navigate to the test folder, and click on any `.html` files to run your tests.
