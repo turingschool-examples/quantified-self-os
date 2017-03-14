@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" media="all" href="./vendor/mocha.css">
+  <script src="./vendor/mocha.js"></script>
+  <script src="./vendor/chai.js"></script>
+  <script>
+    mocha.setup('bdd');
+    window.assert = chai.assert;
+    window.onload = function() { mocha.run(); };
+  </script>
+  <!-- Link to your mocha code like this: -->
+  <!-- <script src="foods-test.js"></script> -->
+  <style>
+    iframe {
+      height:1px;
+      width:1px;
+      border:0;
+    }
+  </style>
+</head>
+<body>
+  <div id="mocha"></div>
+  <!-- If you're running integration tests, add the page you're testing as an iframe: -->
+  <!-- <iframe id="foods-frame" src="../foods.html"></iframe> -->
+</body>
