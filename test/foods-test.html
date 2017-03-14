@@ -5,22 +5,12 @@
   <script src="./vendor/chai.js"></script>
   <script>
     mocha.setup('bdd');
-    // window.expect = chai.expect;
     window.assert = chai.assert;
     window.onload = function() {
       window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
     };
   </script>
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.js"
-    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-    crossorigin="anonymous"></script>
-  <script src="../lib/foods.js"></script>
-  <script src="../lib/common.js"></script>
   <script src="foods-test.js"></script>
-  <style>
-    /*iframe{ height:1px; width:1px; }*/
-  </style>
 </head>
 <body>
   <div id="mocha"></div>
