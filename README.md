@@ -8,7 +8,7 @@ Just clone it down, and start editing HTML/JS/CSS.
 
 ## Running Tests
 
-This project uses [Mocha](https://mochajs.org/) as the test runner, [Chai](http://chaijs.com/) for assertions, and [jQuery](https://jquery.com/) for integration test like functionality.
+This project uses [Mocha](https://mochajs.org/) as the test runner, [Chai](http://chaijs.com/) for assertions, and [jQuery](https://jquery.com/) for interacting with the DOM in integration tests.
 
 We'll need `node` and `npm` installed. Run this if you don't already have `node`:
 
